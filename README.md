@@ -5,4 +5,4 @@ Análise dos dados para o IBGE, como parte do projeto para a aula PCS5787 - Ciê
 
 - João Taff Freire
 - Miguél Suares
-- Rodrigo Bapp Barros
+- Rodrigo Baptista de Barros
