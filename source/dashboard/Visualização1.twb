@@ -1,0 +1,2156 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20263.26.1022.1645                               -->
+<workbook _.fcp.WorkbookFingerprinting.true...author-id='a5c3de14b09cc0b2c6734282e5d02aaf0fd11dcbff9e0b193240b31e422c90eb' _.fcp.WorkbookFingerprinting.true...creator-author-id='a5c3de14b09cc0b2c6734282e5d02aaf0fd11dcbff9e0b193240b31e422c90eb' _.fcp.WorkbookFingerprinting.true...creator-license-type='free' _.fcp.WorkbookFingerprinting.true...creator-machine-id='31bb3807bb697dd681d913538cbded13aad1ad8461a6b6a2b8b35b86d952dc83' _.fcp.WorkbookFingerprinting.true...license-type='free' _.fcp.WorkbookFingerprinting.true...machine-id='31bb3807bb697dd681d913538cbded13aad1ad8461a6b6a2b8b35b86d952dc83' original-version='18.1' source-build='2026.3.0 (20263.26.1022.1645)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SpatialFileLayer />
+    <WindowsPersistSimpleIdentifiers />
+    <_.fcp.WorkbookFingerprinting.true...WorkbookFingerprinting />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='Minimo Pixels' datatype='integer' name='[Parâmetro 0973131880468484]' param-domain-type='range' role='measure' type='quantitative' value='5'>
+        <calculation class='tableau' formula='5' />
+        <range min='1' />
+      </column>
+    </datasource>
+    <datasource caption='ucs4326' inline='true' name='federated.0jl0l2y1c6yr161bfa37k0ro50ye' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='ucs4326' name='ogrdirect.0qnbc6r056k2s9197vods03eslok'>
+            <connection class='ogrdirect' directory='C:/Users/miguel/Documents/doutorado/IBGE/ODS-14/a/camada_vetorial_cnuc' filename='ucs4326.shp' password='' server='' tablename='' />
+          </named-connection>
+          <named-connection caption='ods1411a_estatisticas_ucs_indicador' name='excel-direct.0kjy0o50e88u1d13g6itp0rpb8vu'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/miguel/Documents/doutorado/IBGE/ODS-14/a/data/ods1411a_estatisticas_ucs_indicador.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation type='collection'>
+          <relation connection='ogrdirect.0qnbc6r056k2s9197vods03eslok' name='ucs4326.shp' table='[ucs4326.shp]' type='table'>
+            <columns>
+              <column datatype='string' name='gml_id' ordinal='0' />
+              <column datatype='string' name='docleg_id' ordinal='1' />
+              <column datatype='string' name='uc_id' ordinal='2' />
+              <column datatype='string' name='cd_cnuc' ordinal='3' />
+              <column datatype='string' name='wdpa_pid' ordinal='4' />
+              <column datatype='string' name='nome_uc' ordinal='5' />
+              <column datatype='string' name='cria_ano' ordinal='6' />
+              <column datatype='string' name='cria_ato' ordinal='7' />
+              <column datatype='string' name='outro_ato' ordinal='8' />
+              <column datatype='string' name='pl_manejo' ordinal='9' />
+              <column datatype='string' name='co_gestor' ordinal='10' />
+              <column datatype='string' name='quali_pol' ordinal='11' />
+              <column datatype='string' name='ppgr' ordinal='12' />
+              <column datatype='string' name='ha_total' ordinal='13' />
+              <column datatype='string' name='ha_ato' ordinal='14' />
+              <column datatype='string' name='esfera' ordinal='15' />
+              <column datatype='string' name='uf' ordinal='16' />
+              <column datatype='string' name='municipio' ordinal='17' />
+              <column datatype='string' name='org_gestor' ordinal='18' />
+              <column datatype='string' name='grupo' ordinal='19' />
+              <column datatype='string' name='categoria' ordinal='20' />
+              <column datatype='string' name='cat_iucn' ordinal='21' />
+              <column datatype='string' name='amazonia' ordinal='22' />
+              <column datatype='string' name='caatinga' ordinal='23' />
+              <column datatype='string' name='cerrado' ordinal='24' />
+              <column datatype='string' name='matlantica' ordinal='25' />
+              <column datatype='string' name='pampa' ordinal='26' />
+              <column datatype='string' name='pantanal' ordinal='27' />
+              <column datatype='string' name='marinho' ordinal='28' />
+              <column datatype='string' name='situacao' ordinal='29' />
+              <column datatype='string' name='dt_cert_og' ordinal='30' />
+              <column datatype='string' name='limite' ordinal='31' />
+              <column datatype='spatial' name='Geometry' ordinal='32' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0kjy0o50e88u1d13g6itp0rpb8vu' name='ods1411a_estatisticas_ucs_indic' table='[ods1411a_estatisticas_ucs_indic$]' type='table'>
+            <columns gridOrigin='A1:AY10001:no:A1:AY10001:0' header='yes' outcome='2'>
+              <column datatype='integer' name='docleg_id' ordinal='0' />
+              <column datatype='integer' name='uc_id' ordinal='1' />
+              <column datatype='string' name='cd_cnuc' ordinal='2' />
+              <column datatype='string' name='wdpa_pid' ordinal='3' />
+              <column datatype='string' name='nome_uc' ordinal='4' />
+              <column datatype='string' name='cria_ano' ordinal='5' />
+              <column datatype='string' name='cria_ato' ordinal='6' />
+              <column datatype='string' name='outro_ato' ordinal='7' />
+              <column datatype='string' name='pl_manejo' ordinal='8' />
+              <column datatype='string' name='co_gestor' ordinal='9' />
+              <column datatype='string' name='quali_pol' ordinal='10' />
+              <column datatype='string' name='ppgr' ordinal='11' />
+              <column datatype='string' name='ha_total' ordinal='12' />
+              <column datatype='string' name='ha_ato' ordinal='13' />
+              <column datatype='string' name='esfera' ordinal='14' />
+              <column datatype='string' name='uf' ordinal='15' />
+              <column datatype='string' name='municipio' ordinal='16' />
+              <column datatype='string' name='org_gestor' ordinal='17' />
+              <column datatype='string' name='grupo' ordinal='18' />
+              <column datatype='string' name='categoria' ordinal='19' />
+              <column datatype='string' name='cat_iucn' ordinal='20' />
+              <column datatype='string' name='amazonia' ordinal='21' />
+              <column datatype='string' name='caatinga' ordinal='22' />
+              <column datatype='string' name='cerrado' ordinal='23' />
+              <column datatype='string' name='matlantica' ordinal='24' />
+              <column datatype='string' name='pampa' ordinal='25' />
+              <column datatype='string' name='pantanal' ordinal='26' />
+              <column datatype='string' name='marinho' ordinal='27' />
+              <column datatype='string' name='situacao' ordinal='28' />
+              <column datatype='string' name='dt_cert_og' ordinal='29' />
+              <column datatype='string' name='limite' ordinal='30' />
+              <column datatype='string' name='raster' ordinal='31' />
+              <column datatype='integer' name='ano' ordinal='32' />
+              <column datatype='string' name='scale' ordinal='33' />
+              <column datatype='string' name='offset' ordinal='34' />
+              <column datatype='string' name='nodata' ordinal='35' />
+              <column datatype='integer' name='n_pixels_validos' ordinal='36' />
+              <column datatype='string' name='mediana' ordinal='37' />
+              <column datatype='string' name='media' ordinal='38' />
+              <column datatype='string' name='minimo' ordinal='39' />
+              <column datatype='string' name='maximo' ordinal='40' />
+              <column datatype='date' name='data_inicio' ordinal='41' />
+              <column datatype='date' name='data_fim' ordinal='42' />
+              <column datatype='integer' name='dia_do_ano' ordinal='43' />
+              <column datatype='integer' name='janela_8d' ordinal='44' />
+              <column datatype='real' name='chl_observada' ordinal='45' />
+              <column datatype='real' name='clim_uc_t' ordinal='46' />
+              <column datatype='real' name='anomalia' ordinal='47' />
+              <column datatype='real' name='anomalia_relativa' ordinal='48' />
+              <column datatype='real' name='F50' ordinal='49' />
+              <column datatype='integer' name='n_obs_climatologia' ordinal='50' />
+            </columns>
+          </relation>
+        </relation>
+        <cols>
+          <map key='[F50]' value='[ods1411a_estatisticas_ucs_indic].[F50]' />
+          <map key='[Geometry]' value='[ucs4326.shp].[Geometry]' />
+          <map key='[amazonia (ods1411a!estatisticas!ucs!indic)]' value='[ods1411a_estatisticas_ucs_indic].[amazonia]' />
+          <map key='[amazonia]' value='[ucs4326.shp].[amazonia]' />
+          <map key='[ano]' value='[ods1411a_estatisticas_ucs_indic].[ano]' />
+          <map key='[anomalia]' value='[ods1411a_estatisticas_ucs_indic].[anomalia]' />
+          <map key='[anomalia_relativa]' value='[ods1411a_estatisticas_ucs_indic].[anomalia_relativa]' />
+          <map key='[caatinga (ods1411a!estatisticas!ucs!indic)]' value='[ods1411a_estatisticas_ucs_indic].[caatinga]' />
+          <map key='[caatinga]' value='[ucs4326.shp].[caatinga]' />
+          <map key='[cat_iucn (ods1411a!estatisticas!ucs!indic)]' value='[ods1411a_estatisticas_ucs_indic].[cat_iucn]' />
+          <map key='[cat_iucn]' value='[ucs4326.shp].[cat_iucn]' />
+          <map key='[categoria (ods1411a!estatisticas!ucs!indic)]' value='[ods1411a_estatisticas_ucs_indic].[categoria]' />
+          <map key='[categoria]' value='[ucs4326.shp].[categoria]' />
+          <map key='[cd_cnuc (ods1411a!estatisticas!ucs!indic)]' value='[ods1411a_estatisticas_ucs_indic].[cd_cnuc]' />
+          <map key='[cd_cnuc]' value='[ucs4326.shp].[cd_cnuc]' />
+          <map key='[cerrado (ods1411a!estatisticas!ucs!indic)]' value='[ods1411a_estatisticas_ucs_indic].[cerrado]' />
+          <map key='[cerrado]' value='[ucs4326.shp].[cerrado]' />
+          <map key='[chl_observada]' value='[ods1411a_estatisticas_ucs_indic].[chl_observada]' />
+          <map key='[clim_uc_t]' value='[ods1411a_estatisticas_ucs_indic].[clim_uc_t]' />
+          <map key='[co_gestor (ods1411a!estatisticas!ucs!indic)]' value='[ods1411a_estatisticas_ucs_indic].[co_gestor]' />
+          <map key='[co_gestor]' value='[ucs4326.shp].[co_gestor]' />
+          <map key='[cria_ano (ods1411a!estatisticas!ucs!indic)]' value='[ods1411a_estatisticas_ucs_indic].[cria_ano]' />
+          <map key='[cria_ano]' value='[ucs4326.shp].[cria_ano]' />
+          <map key='[cria_ato (ods1411a!estatisticas!ucs!indic)]' value='[ods1411a_estatisticas_ucs_indic].[cria_ato]' />
+          <map key='[cria_ato]' value='[ucs4326.shp].[cria_ato]' />
+          <map key='[data_fim]' value='[ods1411a_estatisticas_ucs_indic].[data_fim]' />
+          <map key='[data_inicio]' value='[ods1411a_estatisticas_ucs_indic].[data_inicio]' />
+          <map key='[dia_do_ano]' value='[ods1411a_estatisticas_ucs_indic].[dia_do_ano]' />
+          <map key='[docleg_id (ods1411a!estatisticas!ucs!indic)]' value='[ods1411a_estatisticas_ucs_indic].[docleg_id]' />
+          <map key='[docleg_id]' value='[ucs4326.shp].[docleg_id]' />
+          <map key='[dt_cert_og (ods1411a!estatisticas!ucs!indic)]' value='[ods1411a_estatisticas_ucs_indic].[dt_cert_og]' />
+          <map key='[dt_cert_og]' value='[ucs4326.shp].[dt_cert_og]' />
+          <map key='[esfera (ods1411a!estatisticas!ucs!indic)]' value='[ods1411a_estatisticas_ucs_indic].[esfera]' />
+          <map key='[esfera]' value='[ucs4326.shp].[esfera]' />
+          <map key='[gml_id]' value='[ucs4326.shp].[gml_id]' />
+          <map key='[grupo (ods1411a!estatisticas!ucs!indic)]' value='[ods1411a_estatisticas_ucs_indic].[grupo]' />
+          <map key='[grupo]' value='[ucs4326.shp].[grupo]' />
+          <map key='[ha_ato (ods1411a!estatisticas!ucs!indic)]' value='[ods1411a_estatisticas_ucs_indic].[ha_ato]' />
+          <map key='[ha_ato]' value='[ucs4326.shp].[ha_ato]' />
+          <map key='[ha_total (ods1411a!estatisticas!ucs!indic)]' value='[ods1411a_estatisticas_ucs_indic].[ha_total]' />
+          <map key='[ha_total]' value='[ucs4326.shp].[ha_total]' />
+          <map key='[janela_8d]' value='[ods1411a_estatisticas_ucs_indic].[janela_8d]' />
+          <map key='[limite (ods1411a!estatisticas!ucs!indic)]' value='[ods1411a_estatisticas_ucs_indic].[limite]' />
+          <map key='[limite]' value='[ucs4326.shp].[limite]' />
+          <map key='[marinho (ods1411a!estatisticas!ucs!indic)]' value='[ods1411a_estatisticas_ucs_indic].[marinho]' />
+          <map key='[marinho]' value='[ucs4326.shp].[marinho]' />
+          <map key='[matlantica (ods1411a!estatisticas!ucs!indic)]' value='[ods1411a_estatisticas_ucs_indic].[matlantica]' />
+          <map key='[matlantica]' value='[ucs4326.shp].[matlantica]' />
+          <map key='[maximo]' value='[ods1411a_estatisticas_ucs_indic].[maximo]' />
+          <map key='[media]' value='[ods1411a_estatisticas_ucs_indic].[media]' />
+          <map key='[mediana]' value='[ods1411a_estatisticas_ucs_indic].[mediana]' />
+          <map key='[minimo]' value='[ods1411a_estatisticas_ucs_indic].[minimo]' />
+          <map key='[municipio (ods1411a!estatisticas!ucs!indic)]' value='[ods1411a_estatisticas_ucs_indic].[municipio]' />
+          <map key='[municipio]' value='[ucs4326.shp].[municipio]' />
+          <map key='[n_obs_climatologia]' value='[ods1411a_estatisticas_ucs_indic].[n_obs_climatologia]' />
+          <map key='[n_pixels_validos]' value='[ods1411a_estatisticas_ucs_indic].[n_pixels_validos]' />
+          <map key='[nodata]' value='[ods1411a_estatisticas_ucs_indic].[nodata]' />
+          <map key='[nome_uc (ods1411a!estatisticas!ucs!indic)]' value='[ods1411a_estatisticas_ucs_indic].[nome_uc]' />
+          <map key='[nome_uc]' value='[ucs4326.shp].[nome_uc]' />
+          <map key='[offset]' value='[ods1411a_estatisticas_ucs_indic].[offset]' />
+          <map key='[org_gestor (ods1411a!estatisticas!ucs!indic)]' value='[ods1411a_estatisticas_ucs_indic].[org_gestor]' />
+          <map key='[org_gestor]' value='[ucs4326.shp].[org_gestor]' />
+          <map key='[outro_ato (ods1411a!estatisticas!ucs!indic)]' value='[ods1411a_estatisticas_ucs_indic].[outro_ato]' />
+          <map key='[outro_ato]' value='[ucs4326.shp].[outro_ato]' />
+          <map key='[pampa (ods1411a!estatisticas!ucs!indic)]' value='[ods1411a_estatisticas_ucs_indic].[pampa]' />
+          <map key='[pampa]' value='[ucs4326.shp].[pampa]' />
+          <map key='[pantanal (ods1411a!estatisticas!ucs!indic)]' value='[ods1411a_estatisticas_ucs_indic].[pantanal]' />
+          <map key='[pantanal]' value='[ucs4326.shp].[pantanal]' />
+          <map key='[pl_manejo (ods1411a!estatisticas!ucs!indic)]' value='[ods1411a_estatisticas_ucs_indic].[pl_manejo]' />
+          <map key='[pl_manejo]' value='[ucs4326.shp].[pl_manejo]' />
+          <map key='[ppgr (ods1411a!estatisticas!ucs!indic)]' value='[ods1411a_estatisticas_ucs_indic].[ppgr]' />
+          <map key='[ppgr]' value='[ucs4326.shp].[ppgr]' />
+          <map key='[quali_pol (ods1411a!estatisticas!ucs!indic)]' value='[ods1411a_estatisticas_ucs_indic].[quali_pol]' />
+          <map key='[quali_pol]' value='[ucs4326.shp].[quali_pol]' />
+          <map key='[raster]' value='[ods1411a_estatisticas_ucs_indic].[raster]' />
+          <map key='[scale]' value='[ods1411a_estatisticas_ucs_indic].[scale]' />
+          <map key='[situacao (ods1411a!estatisticas!ucs!indic)]' value='[ods1411a_estatisticas_ucs_indic].[situacao]' />
+          <map key='[situacao]' value='[ucs4326.shp].[situacao]' />
+          <map key='[uc_id (ods1411a!estatisticas!ucs!indic)]' value='[ods1411a_estatisticas_ucs_indic].[uc_id]' />
+          <map key='[uc_id]' value='[ucs4326.shp].[uc_id]' />
+          <map key='[uf (ods1411a!estatisticas!ucs!indic)]' value='[ods1411a_estatisticas_ucs_indic].[uf]' />
+          <map key='[uf]' value='[ucs4326.shp].[uf]' />
+          <map key='[wdpa_pid (ods1411a!estatisticas!ucs!indic)]' value='[ods1411a_estatisticas_ucs_indic].[wdpa_pid]' />
+          <map key='[wdpa_pid]' value='[ucs4326.shp].[wdpa_pid]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[ods1411a_estatisticas_ucs_indic]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:AY10001:no:A1:AY10001:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gml_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[gml_id]</local-name>
+            <parent-name>[ucs4326.shp]</parent-name>
+            <remote-alias>gml_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[ucs4326.shp_88EDE94558BB4DD59BD2AAA813029E62]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>docleg_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[docleg_id]</local-name>
+            <parent-name>[ucs4326.shp]</parent-name>
+            <remote-alias>docleg_id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[ucs4326.shp_88EDE94558BB4DD59BD2AAA813029E62]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>uc_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[uc_id]</local-name>
+            <parent-name>[ucs4326.shp]</parent-name>
+            <remote-alias>uc_id</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[ucs4326.shp_88EDE94558BB4DD59BD2AAA813029E62]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cd_cnuc</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[cd_cnuc]</local-name>
+            <parent-name>[ucs4326.shp]</parent-name>
+            <remote-alias>cd_cnuc</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[ucs4326.shp_88EDE94558BB4DD59BD2AAA813029E62]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>wdpa_pid</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[wdpa_pid]</local-name>
+            <parent-name>[ucs4326.shp]</parent-name>
+            <remote-alias>wdpa_pid</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[ucs4326.shp_88EDE94558BB4DD59BD2AAA813029E62]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>nome_uc</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[nome_uc]</local-name>
+            <parent-name>[ucs4326.shp]</parent-name>
+            <remote-alias>nome_uc</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[ucs4326.shp_88EDE94558BB4DD59BD2AAA813029E62]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cria_ano</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[cria_ano]</local-name>
+            <parent-name>[ucs4326.shp]</parent-name>
+            <remote-alias>cria_ano</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[ucs4326.shp_88EDE94558BB4DD59BD2AAA813029E62]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cria_ato</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[cria_ato]</local-name>
+            <parent-name>[ucs4326.shp]</parent-name>
+            <remote-alias>cria_ato</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[ucs4326.shp_88EDE94558BB4DD59BD2AAA813029E62]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>outro_ato</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[outro_ato]</local-name>
+            <parent-name>[ucs4326.shp]</parent-name>
+            <remote-alias>outro_ato</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[ucs4326.shp_88EDE94558BB4DD59BD2AAA813029E62]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pl_manejo</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[pl_manejo]</local-name>
+            <parent-name>[ucs4326.shp]</parent-name>
+            <remote-alias>pl_manejo</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[ucs4326.shp_88EDE94558BB4DD59BD2AAA813029E62]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>co_gestor</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[co_gestor]</local-name>
+            <parent-name>[ucs4326.shp]</parent-name>
+            <remote-alias>co_gestor</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[ucs4326.shp_88EDE94558BB4DD59BD2AAA813029E62]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>quali_pol</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[quali_pol]</local-name>
+            <parent-name>[ucs4326.shp]</parent-name>
+            <remote-alias>quali_pol</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[ucs4326.shp_88EDE94558BB4DD59BD2AAA813029E62]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ppgr</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ppgr]</local-name>
+            <parent-name>[ucs4326.shp]</parent-name>
+            <remote-alias>ppgr</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[ucs4326.shp_88EDE94558BB4DD59BD2AAA813029E62]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ha_total</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ha_total]</local-name>
+            <parent-name>[ucs4326.shp]</parent-name>
+            <remote-alias>ha_total</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[ucs4326.shp_88EDE94558BB4DD59BD2AAA813029E62]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ha_ato</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ha_ato]</local-name>
+            <parent-name>[ucs4326.shp]</parent-name>
+            <remote-alias>ha_ato</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[ucs4326.shp_88EDE94558BB4DD59BD2AAA813029E62]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>esfera</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[esfera]</local-name>
+            <parent-name>[ucs4326.shp]</parent-name>
+            <remote-alias>esfera</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[ucs4326.shp_88EDE94558BB4DD59BD2AAA813029E62]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>uf</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[uf]</local-name>
+            <parent-name>[ucs4326.shp]</parent-name>
+            <remote-alias>uf</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[ucs4326.shp_88EDE94558BB4DD59BD2AAA813029E62]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>municipio</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[municipio]</local-name>
+            <parent-name>[ucs4326.shp]</parent-name>
+            <remote-alias>municipio</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[ucs4326.shp_88EDE94558BB4DD59BD2AAA813029E62]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>org_gestor</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[org_gestor]</local-name>
+            <parent-name>[ucs4326.shp]</parent-name>
+            <remote-alias>org_gestor</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[ucs4326.shp_88EDE94558BB4DD59BD2AAA813029E62]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>grupo</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[grupo]</local-name>
+            <parent-name>[ucs4326.shp]</parent-name>
+            <remote-alias>grupo</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[ucs4326.shp_88EDE94558BB4DD59BD2AAA813029E62]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>categoria</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[categoria]</local-name>
+            <parent-name>[ucs4326.shp]</parent-name>
+            <remote-alias>categoria</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[ucs4326.shp_88EDE94558BB4DD59BD2AAA813029E62]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cat_iucn</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[cat_iucn]</local-name>
+            <parent-name>[ucs4326.shp]</parent-name>
+            <remote-alias>cat_iucn</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[ucs4326.shp_88EDE94558BB4DD59BD2AAA813029E62]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>amazonia</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[amazonia]</local-name>
+            <parent-name>[ucs4326.shp]</parent-name>
+            <remote-alias>amazonia</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[ucs4326.shp_88EDE94558BB4DD59BD2AAA813029E62]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>caatinga</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[caatinga]</local-name>
+            <parent-name>[ucs4326.shp]</parent-name>
+            <remote-alias>caatinga</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[ucs4326.shp_88EDE94558BB4DD59BD2AAA813029E62]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cerrado</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[cerrado]</local-name>
+            <parent-name>[ucs4326.shp]</parent-name>
+            <remote-alias>cerrado</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[ucs4326.shp_88EDE94558BB4DD59BD2AAA813029E62]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>matlantica</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[matlantica]</local-name>
+            <parent-name>[ucs4326.shp]</parent-name>
+            <remote-alias>matlantica</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[ucs4326.shp_88EDE94558BB4DD59BD2AAA813029E62]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pampa</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[pampa]</local-name>
+            <parent-name>[ucs4326.shp]</parent-name>
+            <remote-alias>pampa</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[ucs4326.shp_88EDE94558BB4DD59BD2AAA813029E62]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pantanal</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[pantanal]</local-name>
+            <parent-name>[ucs4326.shp]</parent-name>
+            <remote-alias>pantanal</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[ucs4326.shp_88EDE94558BB4DD59BD2AAA813029E62]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>marinho</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[marinho]</local-name>
+            <parent-name>[ucs4326.shp]</parent-name>
+            <remote-alias>marinho</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[ucs4326.shp_88EDE94558BB4DD59BD2AAA813029E62]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>situacao</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[situacao]</local-name>
+            <parent-name>[ucs4326.shp]</parent-name>
+            <remote-alias>situacao</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[ucs4326.shp_88EDE94558BB4DD59BD2AAA813029E62]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dt_cert_og</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[dt_cert_og]</local-name>
+            <parent-name>[ucs4326.shp]</parent-name>
+            <remote-alias>dt_cert_og</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[ucs4326.shp_88EDE94558BB4DD59BD2AAA813029E62]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>limite</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[limite]</local-name>
+            <parent-name>[ucs4326.shp]</parent-name>
+            <remote-alias>limite</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[ucs4326.shp_88EDE94558BB4DD59BD2AAA813029E62]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Geometry</remote-name>
+            <remote-type>8</remote-type>
+            <local-name>[Geometry]</local-name>
+            <parent-name>[ucs4326.shp]</parent-name>
+            <remote-alias>Geometry</remote-alias>
+            <ordinal>32</ordinal>
+            <caption>Geometria</caption>
+            <local-type>spatial</local-type>
+            <aggregation>Collect</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ucs4326.shp_88EDE94558BB4DD59BD2AAA813029E62]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>docleg_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[docleg_id (ods1411a!estatisticas!ucs!indic)]</local-name>
+            <parent-name>[ods1411a_estatisticas_ucs_indic]</parent-name>
+            <remote-alias>docleg_id</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[ods1411a!estatisticas!ucs!indic_32AB62B510FC4C8998EBE0CDE4933E12]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>uc_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[uc_id (ods1411a!estatisticas!ucs!indic)]</local-name>
+            <parent-name>[ods1411a_estatisticas_ucs_indic]</parent-name>
+            <remote-alias>uc_id</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[ods1411a!estatisticas!ucs!indic_32AB62B510FC4C8998EBE0CDE4933E12]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cd_cnuc</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[cd_cnuc (ods1411a!estatisticas!ucs!indic)]</local-name>
+            <parent-name>[ods1411a_estatisticas_ucs_indic]</parent-name>
+            <remote-alias>cd_cnuc</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[ods1411a!estatisticas!ucs!indic_32AB62B510FC4C8998EBE0CDE4933E12]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>wdpa_pid</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[wdpa_pid (ods1411a!estatisticas!ucs!indic)]</local-name>
+            <parent-name>[ods1411a_estatisticas_ucs_indic]</parent-name>
+            <remote-alias>wdpa_pid</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[ods1411a!estatisticas!ucs!indic_32AB62B510FC4C8998EBE0CDE4933E12]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>nome_uc</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[nome_uc (ods1411a!estatisticas!ucs!indic)]</local-name>
+            <parent-name>[ods1411a_estatisticas_ucs_indic]</parent-name>
+            <remote-alias>nome_uc</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[ods1411a!estatisticas!ucs!indic_32AB62B510FC4C8998EBE0CDE4933E12]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cria_ano</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[cria_ano (ods1411a!estatisticas!ucs!indic)]</local-name>
+            <parent-name>[ods1411a_estatisticas_ucs_indic]</parent-name>
+            <remote-alias>cria_ano</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[ods1411a!estatisticas!ucs!indic_32AB62B510FC4C8998EBE0CDE4933E12]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cria_ato</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[cria_ato (ods1411a!estatisticas!ucs!indic)]</local-name>
+            <parent-name>[ods1411a_estatisticas_ucs_indic]</parent-name>
+            <remote-alias>cria_ato</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[ods1411a!estatisticas!ucs!indic_32AB62B510FC4C8998EBE0CDE4933E12]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>outro_ato</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[outro_ato (ods1411a!estatisticas!ucs!indic)]</local-name>
+            <parent-name>[ods1411a_estatisticas_ucs_indic]</parent-name>
+            <remote-alias>outro_ato</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[ods1411a!estatisticas!ucs!indic_32AB62B510FC4C8998EBE0CDE4933E12]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pl_manejo</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[pl_manejo (ods1411a!estatisticas!ucs!indic)]</local-name>
+            <parent-name>[ods1411a_estatisticas_ucs_indic]</parent-name>
+            <remote-alias>pl_manejo</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[ods1411a!estatisticas!ucs!indic_32AB62B510FC4C8998EBE0CDE4933E12]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>co_gestor</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[co_gestor (ods1411a!estatisticas!ucs!indic)]</local-name>
+            <parent-name>[ods1411a_estatisticas_ucs_indic]</parent-name>
+            <remote-alias>co_gestor</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[ods1411a!estatisticas!ucs!indic_32AB62B510FC4C8998EBE0CDE4933E12]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>quali_pol</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[quali_pol (ods1411a!estatisticas!ucs!indic)]</local-name>
+            <parent-name>[ods1411a_estatisticas_ucs_indic]</parent-name>
+            <remote-alias>quali_pol</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[ods1411a!estatisticas!ucs!indic_32AB62B510FC4C8998EBE0CDE4933E12]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ppgr</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[ppgr (ods1411a!estatisticas!ucs!indic)]</local-name>
+            <parent-name>[ods1411a_estatisticas_ucs_indic]</parent-name>
+            <remote-alias>ppgr</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[ods1411a!estatisticas!ucs!indic_32AB62B510FC4C8998EBE0CDE4933E12]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ha_total</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[ha_total (ods1411a!estatisticas!ucs!indic)]</local-name>
+            <parent-name>[ods1411a_estatisticas_ucs_indic]</parent-name>
+            <remote-alias>ha_total</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[ods1411a!estatisticas!ucs!indic_32AB62B510FC4C8998EBE0CDE4933E12]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ha_ato</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[ha_ato (ods1411a!estatisticas!ucs!indic)]</local-name>
+            <parent-name>[ods1411a_estatisticas_ucs_indic]</parent-name>
+            <remote-alias>ha_ato</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[ods1411a!estatisticas!ucs!indic_32AB62B510FC4C8998EBE0CDE4933E12]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>esfera</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[esfera (ods1411a!estatisticas!ucs!indic)]</local-name>
+            <parent-name>[ods1411a_estatisticas_ucs_indic]</parent-name>
+            <remote-alias>esfera</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[ods1411a!estatisticas!ucs!indic_32AB62B510FC4C8998EBE0CDE4933E12]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>uf</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[uf (ods1411a!estatisticas!ucs!indic)]</local-name>
+            <parent-name>[ods1411a_estatisticas_ucs_indic]</parent-name>
+            <remote-alias>uf</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[ods1411a!estatisticas!ucs!indic_32AB62B510FC4C8998EBE0CDE4933E12]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>municipio</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[municipio (ods1411a!estatisticas!ucs!indic)]</local-name>
+            <parent-name>[ods1411a_estatisticas_ucs_indic]</parent-name>
+            <remote-alias>municipio</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[ods1411a!estatisticas!ucs!indic_32AB62B510FC4C8998EBE0CDE4933E12]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>org_gestor</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[org_gestor (ods1411a!estatisticas!ucs!indic)]</local-name>
+            <parent-name>[ods1411a_estatisticas_ucs_indic]</parent-name>
+            <remote-alias>org_gestor</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[ods1411a!estatisticas!ucs!indic_32AB62B510FC4C8998EBE0CDE4933E12]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>grupo</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[grupo (ods1411a!estatisticas!ucs!indic)]</local-name>
+            <parent-name>[ods1411a_estatisticas_ucs_indic]</parent-name>
+            <remote-alias>grupo</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[ods1411a!estatisticas!ucs!indic_32AB62B510FC4C8998EBE0CDE4933E12]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>categoria</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[categoria (ods1411a!estatisticas!ucs!indic)]</local-name>
+            <parent-name>[ods1411a_estatisticas_ucs_indic]</parent-name>
+            <remote-alias>categoria</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[ods1411a!estatisticas!ucs!indic_32AB62B510FC4C8998EBE0CDE4933E12]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cat_iucn</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[cat_iucn (ods1411a!estatisticas!ucs!indic)]</local-name>
+            <parent-name>[ods1411a_estatisticas_ucs_indic]</parent-name>
+            <remote-alias>cat_iucn</remote-alias>
+            <ordinal>53</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[ods1411a!estatisticas!ucs!indic_32AB62B510FC4C8998EBE0CDE4933E12]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>amazonia</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[amazonia (ods1411a!estatisticas!ucs!indic)]</local-name>
+            <parent-name>[ods1411a_estatisticas_ucs_indic]</parent-name>
+            <remote-alias>amazonia</remote-alias>
+            <ordinal>54</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[ods1411a!estatisticas!ucs!indic_32AB62B510FC4C8998EBE0CDE4933E12]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>caatinga</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[caatinga (ods1411a!estatisticas!ucs!indic)]</local-name>
+            <parent-name>[ods1411a_estatisticas_ucs_indic]</parent-name>
+            <remote-alias>caatinga</remote-alias>
+            <ordinal>55</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[ods1411a!estatisticas!ucs!indic_32AB62B510FC4C8998EBE0CDE4933E12]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cerrado</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[cerrado (ods1411a!estatisticas!ucs!indic)]</local-name>
+            <parent-name>[ods1411a_estatisticas_ucs_indic]</parent-name>
+            <remote-alias>cerrado</remote-alias>
+            <ordinal>56</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[ods1411a!estatisticas!ucs!indic_32AB62B510FC4C8998EBE0CDE4933E12]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>matlantica</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[matlantica (ods1411a!estatisticas!ucs!indic)]</local-name>
+            <parent-name>[ods1411a_estatisticas_ucs_indic]</parent-name>
+            <remote-alias>matlantica</remote-alias>
+            <ordinal>57</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[ods1411a!estatisticas!ucs!indic_32AB62B510FC4C8998EBE0CDE4933E12]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pampa</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[pampa (ods1411a!estatisticas!ucs!indic)]</local-name>
+            <parent-name>[ods1411a_estatisticas_ucs_indic]</parent-name>
+            <remote-alias>pampa</remote-alias>
+            <ordinal>58</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[ods1411a!estatisticas!ucs!indic_32AB62B510FC4C8998EBE0CDE4933E12]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pantanal</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[pantanal (ods1411a!estatisticas!ucs!indic)]</local-name>
+            <parent-name>[ods1411a_estatisticas_ucs_indic]</parent-name>
+            <remote-alias>pantanal</remote-alias>
+            <ordinal>59</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[ods1411a!estatisticas!ucs!indic_32AB62B510FC4C8998EBE0CDE4933E12]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>marinho</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[marinho (ods1411a!estatisticas!ucs!indic)]</local-name>
+            <parent-name>[ods1411a_estatisticas_ucs_indic]</parent-name>
+            <remote-alias>marinho</remote-alias>
+            <ordinal>60</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[ods1411a!estatisticas!ucs!indic_32AB62B510FC4C8998EBE0CDE4933E12]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>situacao</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[situacao (ods1411a!estatisticas!ucs!indic)]</local-name>
+            <parent-name>[ods1411a_estatisticas_ucs_indic]</parent-name>
+            <remote-alias>situacao</remote-alias>
+            <ordinal>61</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[ods1411a!estatisticas!ucs!indic_32AB62B510FC4C8998EBE0CDE4933E12]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dt_cert_og</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[dt_cert_og (ods1411a!estatisticas!ucs!indic)]</local-name>
+            <parent-name>[ods1411a_estatisticas_ucs_indic]</parent-name>
+            <remote-alias>dt_cert_og</remote-alias>
+            <ordinal>62</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[ods1411a!estatisticas!ucs!indic_32AB62B510FC4C8998EBE0CDE4933E12]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>limite</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[limite (ods1411a!estatisticas!ucs!indic)]</local-name>
+            <parent-name>[ods1411a_estatisticas_ucs_indic]</parent-name>
+            <remote-alias>limite</remote-alias>
+            <ordinal>63</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[ods1411a!estatisticas!ucs!indic_32AB62B510FC4C8998EBE0CDE4933E12]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>raster</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[raster]</local-name>
+            <parent-name>[ods1411a_estatisticas_ucs_indic]</parent-name>
+            <remote-alias>raster</remote-alias>
+            <ordinal>64</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[ods1411a!estatisticas!ucs!indic_32AB62B510FC4C8998EBE0CDE4933E12]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ano</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ano]</local-name>
+            <parent-name>[ods1411a_estatisticas_ucs_indic]</parent-name>
+            <remote-alias>ano</remote-alias>
+            <ordinal>65</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[ods1411a!estatisticas!ucs!indic_32AB62B510FC4C8998EBE0CDE4933E12]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>scale</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[scale]</local-name>
+            <parent-name>[ods1411a_estatisticas_ucs_indic]</parent-name>
+            <remote-alias>scale</remote-alias>
+            <ordinal>66</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[ods1411a!estatisticas!ucs!indic_32AB62B510FC4C8998EBE0CDE4933E12]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>offset</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[offset]</local-name>
+            <parent-name>[ods1411a_estatisticas_ucs_indic]</parent-name>
+            <remote-alias>offset</remote-alias>
+            <ordinal>67</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[ods1411a!estatisticas!ucs!indic_32AB62B510FC4C8998EBE0CDE4933E12]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>nodata</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[nodata]</local-name>
+            <parent-name>[ods1411a_estatisticas_ucs_indic]</parent-name>
+            <remote-alias>nodata</remote-alias>
+            <ordinal>68</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[ods1411a!estatisticas!ucs!indic_32AB62B510FC4C8998EBE0CDE4933E12]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>n_pixels_validos</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[n_pixels_validos]</local-name>
+            <parent-name>[ods1411a_estatisticas_ucs_indic]</parent-name>
+            <remote-alias>n_pixels_validos</remote-alias>
+            <ordinal>69</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[ods1411a!estatisticas!ucs!indic_32AB62B510FC4C8998EBE0CDE4933E12]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mediana</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[mediana]</local-name>
+            <parent-name>[ods1411a_estatisticas_ucs_indic]</parent-name>
+            <remote-alias>mediana</remote-alias>
+            <ordinal>70</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[ods1411a!estatisticas!ucs!indic_32AB62B510FC4C8998EBE0CDE4933E12]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>media</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[media]</local-name>
+            <parent-name>[ods1411a_estatisticas_ucs_indic]</parent-name>
+            <remote-alias>media</remote-alias>
+            <ordinal>71</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[ods1411a!estatisticas!ucs!indic_32AB62B510FC4C8998EBE0CDE4933E12]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>minimo</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[minimo]</local-name>
+            <parent-name>[ods1411a_estatisticas_ucs_indic]</parent-name>
+            <remote-alias>minimo</remote-alias>
+            <ordinal>72</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[ods1411a!estatisticas!ucs!indic_32AB62B510FC4C8998EBE0CDE4933E12]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>maximo</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[maximo]</local-name>
+            <parent-name>[ods1411a_estatisticas_ucs_indic]</parent-name>
+            <remote-alias>maximo</remote-alias>
+            <ordinal>73</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[ods1411a!estatisticas!ucs!indic_32AB62B510FC4C8998EBE0CDE4933E12]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>data_inicio</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[data_inicio]</local-name>
+            <parent-name>[ods1411a_estatisticas_ucs_indic]</parent-name>
+            <remote-alias>data_inicio</remote-alias>
+            <ordinal>74</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[ods1411a!estatisticas!ucs!indic_32AB62B510FC4C8998EBE0CDE4933E12]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>data_fim</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[data_fim]</local-name>
+            <parent-name>[ods1411a_estatisticas_ucs_indic]</parent-name>
+            <remote-alias>data_fim</remote-alias>
+            <ordinal>75</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[ods1411a!estatisticas!ucs!indic_32AB62B510FC4C8998EBE0CDE4933E12]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dia_do_ano</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[dia_do_ano]</local-name>
+            <parent-name>[ods1411a_estatisticas_ucs_indic]</parent-name>
+            <remote-alias>dia_do_ano</remote-alias>
+            <ordinal>76</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[ods1411a!estatisticas!ucs!indic_32AB62B510FC4C8998EBE0CDE4933E12]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>janela_8d</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[janela_8d]</local-name>
+            <parent-name>[ods1411a_estatisticas_ucs_indic]</parent-name>
+            <remote-alias>janela_8d</remote-alias>
+            <ordinal>77</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[ods1411a!estatisticas!ucs!indic_32AB62B510FC4C8998EBE0CDE4933E12]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>chl_observada</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[chl_observada]</local-name>
+            <parent-name>[ods1411a_estatisticas_ucs_indic]</parent-name>
+            <remote-alias>chl_observada</remote-alias>
+            <ordinal>78</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[ods1411a!estatisticas!ucs!indic_32AB62B510FC4C8998EBE0CDE4933E12]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>clim_uc_t</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[clim_uc_t]</local-name>
+            <parent-name>[ods1411a_estatisticas_ucs_indic]</parent-name>
+            <remote-alias>clim_uc_t</remote-alias>
+            <ordinal>79</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[ods1411a!estatisticas!ucs!indic_32AB62B510FC4C8998EBE0CDE4933E12]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>anomalia</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[anomalia]</local-name>
+            <parent-name>[ods1411a_estatisticas_ucs_indic]</parent-name>
+            <remote-alias>anomalia</remote-alias>
+            <ordinal>80</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[ods1411a!estatisticas!ucs!indic_32AB62B510FC4C8998EBE0CDE4933E12]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>anomalia_relativa</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[anomalia_relativa]</local-name>
+            <parent-name>[ods1411a_estatisticas_ucs_indic]</parent-name>
+            <remote-alias>anomalia_relativa</remote-alias>
+            <ordinal>81</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[ods1411a!estatisticas!ucs!indic_32AB62B510FC4C8998EBE0CDE4933E12]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F50</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[F50]</local-name>
+            <parent-name>[ods1411a_estatisticas_ucs_indic]</parent-name>
+            <remote-alias>F50</remote-alias>
+            <ordinal>82</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[ods1411a!estatisticas!ucs!indic_32AB62B510FC4C8998EBE0CDE4933E12]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>n_obs_climatologia</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[n_obs_climatologia]</local-name>
+            <parent-name>[ods1411a_estatisticas_ucs_indic]</parent-name>
+            <remote-alias>n_obs_climatologia</remote-alias>
+            <ordinal>83</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[ods1411a!estatisticas!ucs!indic_32AB62B510FC4C8998EBE0CDE4933E12]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Área Marinha' datatype='real' name='[Calculation_0973131877974016]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='FLOAT(REPLACE(TRIM([marinho]), &quot;,&quot;, &quot;.&quot;))' />
+      </column>
+      <column caption='UC com Área Marinha' datatype='string' name='[Calculation_0973131878531073]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [Calculation_0973131877974016] &gt; 0 THEN&#13;&#10;    &quot;Marinha&quot;&#13;&#10;ELSE&#13;&#10;    &quot;Não marinha&quot;&#13;&#10;END' />
+      </column>
+      <column caption='FiltroPixels' datatype='boolean' name='[Calculation_0973131881029637]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[n_pixels_validos] &gt;= [Parameters].[Parâmetro 0973131880468484]' />
+      </column>
+      <column caption='Geometria' datatype='spatial' name='[Geometry]' role='measure' type='nominal' />
+      <column caption='ods1411a_estatisticas_ucs_indic' datatype='table' name='[__tableau_internal_object_id__].[ods1411a!estatisticas!ucs!indic_32AB62B510FC4C8998EBE0CDE4933E12]' role='measure' type='quantitative' />
+      <column caption='ucs4326.shp' datatype='table' name='[__tableau_internal_object_id__].[ucs4326.shp_88EDE94558BB4DD59BD2AAA813029E62]' role='measure' type='quantitative' />
+      <column caption='Amazonia (Ods1411A!Estatisticas!Ucs!Indic)' datatype='string' name='[amazonia (ods1411a!estatisticas!ucs!indic)]' role='dimension' type='nominal' />
+      <column caption='Amazonia' datatype='string' name='[amazonia]' role='dimension' type='nominal' />
+      <column caption='Ano' datatype='integer' name='[ano]' role='dimension' type='quantitative' />
+      <column caption='Anomalia' datatype='real' name='[anomalia]' role='measure' type='quantitative' />
+      <column caption='Anomalia Relativa' datatype='real' name='[anomalia_relativa]' role='measure' type='quantitative' />
+      <column caption='Caatinga (Ods1411A!Estatisticas!Ucs!Indic)' datatype='string' name='[caatinga (ods1411a!estatisticas!ucs!indic)]' role='dimension' type='nominal' />
+      <column caption='Caatinga' datatype='string' name='[caatinga]' role='dimension' type='nominal' />
+      <column caption='Cat Iucn (Ods1411A!Estatisticas!Ucs!Indic)' datatype='string' name='[cat_iucn (ods1411a!estatisticas!ucs!indic)]' role='dimension' type='nominal' />
+      <column caption='Cat Iucn' datatype='string' name='[cat_iucn]' role='dimension' type='nominal' />
+      <column caption='Categoria (Ods1411A!Estatisticas!Ucs!Indic)' datatype='string' name='[categoria (ods1411a!estatisticas!ucs!indic)]' role='dimension' type='nominal' />
+      <column caption='Categoria' datatype='string' name='[categoria]' role='dimension' type='nominal' />
+      <column caption='Cd Cnuc (Ods1411A!Estatisticas!Ucs!Indic)' datatype='string' name='[cd_cnuc (ods1411a!estatisticas!ucs!indic)]' role='dimension' type='nominal' />
+      <column caption='Cd Cnuc' datatype='string' name='[cd_cnuc]' role='dimension' type='nominal' />
+      <column caption='Cerrado (Ods1411A!Estatisticas!Ucs!Indic)' datatype='string' name='[cerrado (ods1411a!estatisticas!ucs!indic)]' role='dimension' type='nominal' />
+      <column caption='Cerrado' datatype='string' name='[cerrado]' role='dimension' type='nominal' />
+      <column caption='Chl Observada' datatype='real' name='[chl_observada]' role='measure' type='quantitative' />
+      <column caption='Clim Uc T' datatype='real' name='[clim_uc_t]' role='measure' type='quantitative' />
+      <column caption='Co Gestor (Ods1411A!Estatisticas!Ucs!Indic)' datatype='string' name='[co_gestor (ods1411a!estatisticas!ucs!indic)]' role='dimension' type='nominal' />
+      <column caption='Co Gestor' datatype='string' name='[co_gestor]' role='dimension' type='nominal' />
+      <column caption='Cria Ano (Ods1411A!Estatisticas!Ucs!Indic)' datatype='string' name='[cria_ano (ods1411a!estatisticas!ucs!indic)]' role='dimension' type='nominal' />
+      <column caption='Cria Ano' datatype='string' name='[cria_ano]' role='dimension' type='nominal' />
+      <column caption='Cria Ato (Ods1411A!Estatisticas!Ucs!Indic)' datatype='string' name='[cria_ato (ods1411a!estatisticas!ucs!indic)]' role='dimension' type='nominal' />
+      <column caption='Cria Ato' datatype='string' name='[cria_ato]' role='dimension' type='nominal' />
+      <column caption='Data Fim' datatype='date' name='[data_fim]' role='dimension' type='ordinal' />
+      <column caption='Data Inicio' datatype='date' name='[data_inicio]' role='dimension' type='ordinal' />
+      <column caption='Dia Do Ano' datatype='integer' name='[dia_do_ano]' role='dimension' type='quantitative' />
+      <column caption='Docleg Id (Ods1411A!Estatisticas!Ucs!Indic)' datatype='integer' name='[docleg_id (ods1411a!estatisticas!ucs!indic)]' role='dimension' type='ordinal' />
+      <column caption='Docleg Id' datatype='string' name='[docleg_id]' role='dimension' type='nominal' />
+      <column caption='Dt Cert Og (Ods1411A!Estatisticas!Ucs!Indic)' datatype='string' name='[dt_cert_og (ods1411a!estatisticas!ucs!indic)]' role='dimension' type='nominal' />
+      <column caption='Dt Cert Og' datatype='string' name='[dt_cert_og]' role='dimension' type='nominal' />
+      <column caption='Esfera (Ods1411A!Estatisticas!Ucs!Indic)' datatype='string' name='[esfera (ods1411a!estatisticas!ucs!indic)]' role='dimension' type='nominal' />
+      <column caption='Esfera' datatype='string' name='[esfera]' role='dimension' type='nominal' />
+      <column caption='Gml Id' datatype='string' name='[gml_id]' role='dimension' type='nominal' />
+      <column caption='Grupo (Ods1411A!Estatisticas!Ucs!Indic)' datatype='string' name='[grupo (ods1411a!estatisticas!ucs!indic)]' role='dimension' type='nominal' />
+      <column caption='Grupo' datatype='string' name='[grupo]' role='dimension' type='nominal' />
+      <column caption='Ha Ato (Ods1411A!Estatisticas!Ucs!Indic)' datatype='string' name='[ha_ato (ods1411a!estatisticas!ucs!indic)]' role='dimension' type='nominal' />
+      <column caption='Ha Ato' datatype='string' name='[ha_ato]' role='dimension' type='nominal' />
+      <column caption='Ha Total (Ods1411A!Estatisticas!Ucs!Indic)' datatype='string' name='[ha_total (ods1411a!estatisticas!ucs!indic)]' role='dimension' type='nominal' />
+      <column caption='Ha Total' datatype='string' name='[ha_total]' role='dimension' type='nominal' />
+      <column caption='Janela 8D' datatype='integer' name='[janela_8d]' role='measure' type='quantitative' />
+      <column caption='Limite (Ods1411A!Estatisticas!Ucs!Indic)' datatype='string' name='[limite (ods1411a!estatisticas!ucs!indic)]' role='dimension' type='nominal' />
+      <column caption='Limite' datatype='string' name='[limite]' role='dimension' type='nominal' />
+      <column caption='Marinho (Ods1411A!Estatisticas!Ucs!Indic)' datatype='string' name='[marinho (ods1411a!estatisticas!ucs!indic)]' role='dimension' type='nominal' />
+      <column caption='Marinho' datatype='string' name='[marinho]' role='dimension' type='nominal' />
+      <column caption='Matlantica (Ods1411A!Estatisticas!Ucs!Indic)' datatype='string' name='[matlantica (ods1411a!estatisticas!ucs!indic)]' role='dimension' type='nominal' />
+      <column caption='Matlantica' datatype='string' name='[matlantica]' role='dimension' type='nominal' />
+      <column caption='Maximo' datatype='string' name='[maximo]' role='dimension' type='nominal' />
+      <column caption='Media' datatype='string' name='[media]' role='dimension' type='nominal' />
+      <column caption='Mediana' datatype='string' name='[mediana]' role='dimension' type='nominal' />
+      <column caption='Minimo' datatype='string' name='[minimo]' role='dimension' type='nominal' />
+      <column caption='Municipio (Ods1411A!Estatisticas!Ucs!Indic)' datatype='string' name='[municipio (ods1411a!estatisticas!ucs!indic)]' role='dimension' type='nominal' />
+      <column caption='Municipio' datatype='string' name='[municipio]' role='dimension' type='nominal' />
+      <column caption='N Obs Climatologia' datatype='integer' name='[n_obs_climatologia]' role='measure' type='quantitative' />
+      <column caption='N Pixels Validos' datatype='integer' name='[n_pixels_validos]' role='measure' type='quantitative' />
+      <column caption='Nodata' datatype='string' name='[nodata]' role='dimension' type='nominal' />
+      <column caption='Nome Uc (Ods1411A!Estatisticas!Ucs!Indic)' datatype='string' name='[nome_uc (ods1411a!estatisticas!ucs!indic)]' role='dimension' type='nominal' />
+      <column caption='Nome Uc' datatype='string' name='[nome_uc]' role='dimension' type='nominal' />
+      <column caption='Offset' datatype='string' name='[offset]' role='dimension' type='nominal' />
+      <column caption='Org Gestor (Ods1411A!Estatisticas!Ucs!Indic)' datatype='string' name='[org_gestor (ods1411a!estatisticas!ucs!indic)]' role='dimension' type='nominal' />
+      <column caption='Org Gestor' datatype='string' name='[org_gestor]' role='dimension' type='nominal' />
+      <column caption='Outro Ato (Ods1411A!Estatisticas!Ucs!Indic)' datatype='string' name='[outro_ato (ods1411a!estatisticas!ucs!indic)]' role='dimension' type='nominal' />
+      <column caption='Outro Ato' datatype='string' name='[outro_ato]' role='dimension' type='nominal' />
+      <column caption='Pampa (Ods1411A!Estatisticas!Ucs!Indic)' datatype='string' name='[pampa (ods1411a!estatisticas!ucs!indic)]' role='dimension' type='nominal' />
+      <column caption='Pampa' datatype='string' name='[pampa]' role='dimension' type='nominal' />
+      <column caption='Pantanal (Ods1411A!Estatisticas!Ucs!Indic)' datatype='string' name='[pantanal (ods1411a!estatisticas!ucs!indic)]' role='dimension' type='nominal' />
+      <column caption='Pantanal' datatype='string' name='[pantanal]' role='dimension' type='nominal' />
+      <column caption='Pl Manejo (Ods1411A!Estatisticas!Ucs!Indic)' datatype='string' name='[pl_manejo (ods1411a!estatisticas!ucs!indic)]' role='dimension' type='nominal' />
+      <column caption='Pl Manejo' datatype='string' name='[pl_manejo]' role='dimension' type='nominal' />
+      <column caption='Ppgr (Ods1411A!Estatisticas!Ucs!Indic)' datatype='string' name='[ppgr (ods1411a!estatisticas!ucs!indic)]' role='dimension' type='nominal' />
+      <column caption='Ppgr' datatype='string' name='[ppgr]' role='dimension' type='nominal' />
+      <column caption='Quali Pol (Ods1411A!Estatisticas!Ucs!Indic)' datatype='string' name='[quali_pol (ods1411a!estatisticas!ucs!indic)]' role='dimension' type='nominal' />
+      <column caption='Quali Pol' datatype='string' name='[quali_pol]' role='dimension' type='nominal' />
+      <column caption='Raster' datatype='string' name='[raster]' role='dimension' type='nominal' />
+      <column caption='Scale' datatype='string' name='[scale]' role='dimension' type='nominal' />
+      <column caption='Situacao (Ods1411A!Estatisticas!Ucs!Indic)' datatype='string' name='[situacao (ods1411a!estatisticas!ucs!indic)]' role='dimension' type='nominal' />
+      <column caption='Situacao' datatype='string' name='[situacao]' role='dimension' type='nominal' />
+      <column caption='Uc Id (Ods1411A!Estatisticas!Ucs!Indic)' datatype='integer' name='[uc_id (ods1411a!estatisticas!ucs!indic)]' role='dimension' type='ordinal' />
+      <column caption='Uc Id' datatype='string' name='[uc_id]' role='dimension' type='nominal' />
+      <column caption='Uf (Ods1411A!Estatisticas!Ucs!Indic)' datatype='string' name='[uf (ods1411a!estatisticas!ucs!indic)]' role='dimension' type='nominal' />
+      <column caption='Uf' datatype='string' name='[uf]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Wdpa Pid (Ods1411A!Estatisticas!Ucs!Indic)' datatype='string' name='[wdpa_pid (ods1411a!estatisticas!ucs!indic)]' role='dimension' type='nominal' />
+      <column caption='Wdpa Pid' datatype='string' name='[wdpa_pid]' role='dimension' type='nominal' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Brasil&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='gml_id' />
+        <field-sort-custom-order field='docleg_id' />
+        <field-sort-custom-order field='uc_id' />
+        <field-sort-custom-order field='cd_cnuc' />
+        <field-sort-custom-order field='wdpa_pid' />
+        <field-sort-custom-order field='nome_uc' />
+        <field-sort-custom-order field='cria_ano' />
+        <field-sort-custom-order field='cria_ato' />
+        <field-sort-custom-order field='outro_ato' />
+        <field-sort-custom-order field='pl_manejo' />
+        <field-sort-custom-order field='co_gestor' />
+        <field-sort-custom-order field='quali_pol' />
+        <field-sort-custom-order field='ppgr' />
+        <field-sort-custom-order field='ha_total' />
+        <field-sort-custom-order field='ha_ato' />
+        <field-sort-custom-order field='esfera' />
+        <field-sort-custom-order field='uf' />
+        <field-sort-custom-order field='municipio' />
+        <field-sort-custom-order field='org_gestor' />
+        <field-sort-custom-order field='grupo' />
+        <field-sort-custom-order field='categoria' />
+        <field-sort-custom-order field='cat_iucn' />
+        <field-sort-custom-order field='amazonia' />
+        <field-sort-custom-order field='caatinga' />
+        <field-sort-custom-order field='cerrado' />
+        <field-sort-custom-order field='matlantica' />
+        <field-sort-custom-order field='pampa' />
+        <field-sort-custom-order field='pantanal' />
+        <field-sort-custom-order field='marinho' />
+        <field-sort-custom-order field='Calculation_0973131877974016' />
+        <field-sort-custom-order field='Calculation_0973131878531073' />
+        <field-sort-custom-order field='situacao' />
+        <field-sort-custom-order field='dt_cert_og' />
+        <field-sort-custom-order field='limite' />
+        <field-sort-custom-order field='Geometry' />
+      </field-sort-info>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Minimo Pixels' datatype='integer' name='[Parâmetro 0973131880468484]' param-domain-type='range' role='measure' type='quantitative' value='5'>
+          <calculation class='tableau' formula='5' />
+          <range min='1' />
+        </column>
+      </datasource-dependencies>
+      <object-graph>
+        <objects>
+          <object caption='ods1411a_estatisticas_ucs_indic' id='ods1411a!estatisticas!ucs!indic_32AB62B510FC4C8998EBE0CDE4933E12'>
+            <properties context=''>
+              <relation connection='excel-direct.0kjy0o50e88u1d13g6itp0rpb8vu' name='ods1411a_estatisticas_ucs_indic' table='[ods1411a_estatisticas_ucs_indic$]' type='table'>
+                <columns gridOrigin='A1:AY10001:no:A1:AY10001:0' header='yes' outcome='2'>
+                  <column datatype='integer' name='docleg_id' ordinal='0' />
+                  <column datatype='integer' name='uc_id' ordinal='1' />
+                  <column datatype='string' name='cd_cnuc' ordinal='2' />
+                  <column datatype='string' name='wdpa_pid' ordinal='3' />
+                  <column datatype='string' name='nome_uc' ordinal='4' />
+                  <column datatype='string' name='cria_ano' ordinal='5' />
+                  <column datatype='string' name='cria_ato' ordinal='6' />
+                  <column datatype='string' name='outro_ato' ordinal='7' />
+                  <column datatype='string' name='pl_manejo' ordinal='8' />
+                  <column datatype='string' name='co_gestor' ordinal='9' />
+                  <column datatype='string' name='quali_pol' ordinal='10' />
+                  <column datatype='string' name='ppgr' ordinal='11' />
+                  <column datatype='string' name='ha_total' ordinal='12' />
+                  <column datatype='string' name='ha_ato' ordinal='13' />
+                  <column datatype='string' name='esfera' ordinal='14' />
+                  <column datatype='string' name='uf' ordinal='15' />
+                  <column datatype='string' name='municipio' ordinal='16' />
+                  <column datatype='string' name='org_gestor' ordinal='17' />
+                  <column datatype='string' name='grupo' ordinal='18' />
+                  <column datatype='string' name='categoria' ordinal='19' />
+                  <column datatype='string' name='cat_iucn' ordinal='20' />
+                  <column datatype='string' name='amazonia' ordinal='21' />
+                  <column datatype='string' name='caatinga' ordinal='22' />
+                  <column datatype='string' name='cerrado' ordinal='23' />
+                  <column datatype='string' name='matlantica' ordinal='24' />
+                  <column datatype='string' name='pampa' ordinal='25' />
+                  <column datatype='string' name='pantanal' ordinal='26' />
+                  <column datatype='string' name='marinho' ordinal='27' />
+                  <column datatype='string' name='situacao' ordinal='28' />
+                  <column datatype='string' name='dt_cert_og' ordinal='29' />
+                  <column datatype='string' name='limite' ordinal='30' />
+                  <column datatype='string' name='raster' ordinal='31' />
+                  <column datatype='integer' name='ano' ordinal='32' />
+                  <column datatype='string' name='scale' ordinal='33' />
+                  <column datatype='string' name='offset' ordinal='34' />
+                  <column datatype='string' name='nodata' ordinal='35' />
+                  <column datatype='integer' name='n_pixels_validos' ordinal='36' />
+                  <column datatype='string' name='mediana' ordinal='37' />
+                  <column datatype='string' name='media' ordinal='38' />
+                  <column datatype='string' name='minimo' ordinal='39' />
+                  <column datatype='string' name='maximo' ordinal='40' />
+                  <column datatype='date' name='data_inicio' ordinal='41' />
+                  <column datatype='date' name='data_fim' ordinal='42' />
+                  <column datatype='integer' name='dia_do_ano' ordinal='43' />
+                  <column datatype='integer' name='janela_8d' ordinal='44' />
+                  <column datatype='real' name='chl_observada' ordinal='45' />
+                  <column datatype='real' name='clim_uc_t' ordinal='46' />
+                  <column datatype='real' name='anomalia' ordinal='47' />
+                  <column datatype='real' name='anomalia_relativa' ordinal='48' />
+                  <column datatype='real' name='F50' ordinal='49' />
+                  <column datatype='integer' name='n_obs_climatologia' ordinal='50' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='ucs4326.shp' id='ucs4326.shp_88EDE94558BB4DD59BD2AAA813029E62'>
+            <properties context=''>
+              <relation connection='ogrdirect.0qnbc6r056k2s9197vods03eslok' name='ucs4326.shp' table='[ucs4326.shp]' type='table'>
+                <columns>
+                  <column datatype='string' name='gml_id' ordinal='0' />
+                  <column datatype='string' name='docleg_id' ordinal='1' />
+                  <column datatype='string' name='uc_id' ordinal='2' />
+                  <column datatype='string' name='cd_cnuc' ordinal='3' />
+                  <column datatype='string' name='wdpa_pid' ordinal='4' />
+                  <column datatype='string' name='nome_uc' ordinal='5' />
+                  <column datatype='string' name='cria_ano' ordinal='6' />
+                  <column datatype='string' name='cria_ato' ordinal='7' />
+                  <column datatype='string' name='outro_ato' ordinal='8' />
+                  <column datatype='string' name='pl_manejo' ordinal='9' />
+                  <column datatype='string' name='co_gestor' ordinal='10' />
+                  <column datatype='string' name='quali_pol' ordinal='11' />
+                  <column datatype='string' name='ppgr' ordinal='12' />
+                  <column datatype='string' name='ha_total' ordinal='13' />
+                  <column datatype='string' name='ha_ato' ordinal='14' />
+                  <column datatype='string' name='esfera' ordinal='15' />
+                  <column datatype='string' name='uf' ordinal='16' />
+                  <column datatype='string' name='municipio' ordinal='17' />
+                  <column datatype='string' name='org_gestor' ordinal='18' />
+                  <column datatype='string' name='grupo' ordinal='19' />
+                  <column datatype='string' name='categoria' ordinal='20' />
+                  <column datatype='string' name='cat_iucn' ordinal='21' />
+                  <column datatype='string' name='amazonia' ordinal='22' />
+                  <column datatype='string' name='caatinga' ordinal='23' />
+                  <column datatype='string' name='cerrado' ordinal='24' />
+                  <column datatype='string' name='matlantica' ordinal='25' />
+                  <column datatype='string' name='pampa' ordinal='26' />
+                  <column datatype='string' name='pantanal' ordinal='27' />
+                  <column datatype='string' name='marinho' ordinal='28' />
+                  <column datatype='string' name='situacao' ordinal='29' />
+                  <column datatype='string' name='dt_cert_og' ordinal='30' />
+                  <column datatype='string' name='limite' ordinal='31' />
+                  <column datatype='spatial' name='Geometry' ordinal='32' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[cd_cnuc]' />
+              <expression op='[cd_cnuc (ods1411a!estatisticas!ucs!indic)]' />
+            </expression>
+            <first-end-point object-id='ucs4326.shp_88EDE94558BB4DD59BD2AAA813029E62' unique-key='true' />
+            <second-end-point object-id='ods1411a!estatisticas!ucs!indic_32AB62B510FC4C8998EBE0CDE4933E12' />
+          </relationship>
+        </relationships>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Planilha 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ucs4326' name='federated.0jl0l2y1c6yr161bfa37k0ro50ye' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0jl0l2y1c6yr161bfa37k0ro50ye'>
+            <column caption='Área Marinha' datatype='real' name='[Calculation_0973131877974016]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='FLOAT(REPLACE(TRIM([marinho]), &quot;,&quot;, &quot;.&quot;))' />
+            </column>
+            <column caption='UC com Área Marinha' datatype='string' name='[Calculation_0973131878531073]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Calculation_0973131877974016] &gt; 0 THEN&#13;&#10;    &quot;Marinha&quot;&#13;&#10;ELSE&#13;&#10;    &quot;Não marinha&quot;&#13;&#10;END' />
+            </column>
+            <column caption='Geometria' datatype='spatial' name='[Geometry]' role='measure' type='nominal' />
+            <column-instance column='[nome_uc]' derivation='Attribute' name='[attr:nome_uc:nk]' pivot='key' type='nominal' />
+            <column-instance column='[chl_observada]' derivation='Avg' name='[avg:chl_observada:qk]' pivot='key' type='quantitative' />
+            <column caption='Cd Cnuc' datatype='string' name='[cd_cnuc]' role='dimension' type='nominal' />
+            <column caption='Chl Observada' datatype='real' name='[chl_observada]' role='measure' type='quantitative' />
+            <column-instance column='[Geometry]' derivation='Collect' name='[clct:Geometry:nk]' pivot='key' type='nominal' />
+            <column caption='Marinho' datatype='string' name='[marinho]' role='dimension' type='nominal' />
+            <column caption='Nome Uc' datatype='string' name='[nome_uc]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_0973131878531073]' derivation='None' name='[none:Calculation_0973131878531073:nk]' pivot='key' type='nominal' />
+            <column-instance column='[cd_cnuc]' derivation='None' name='[none:cd_cnuc:nk]' pivot='key' type='nominal' />
+            <column-instance column='[nome_uc]' derivation='None' name='[none:nome_uc:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0jl0l2y1c6yr161bfa37k0ro50ye].[none:Calculation_0973131878531073:nk]'>
+            <groupfilter function='member' level='[none:Calculation_0973131878531073:nk]' member='&quot;Marinha&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0jl0l2y1c6yr161bfa37k0ro50ye].[none:Calculation_0973131878531073:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0jl0l2y1c6yr161bfa37k0ro50ye].[Longitude (generated)]' field-type='quantitative' max='728488.53139346279' min='-8698416.1435224414' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0jl0l2y1c6yr161bfa37k0ro50ye].[Latitude (generated)]' field-type='quantitative' max='736422.64613039233' min='-4730481.2345237006' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0jl0l2y1c6yr161bfa37k0ro50ye].[avg:chl_observada:qk]' palette='red_green_gold_diverging_10_0' reverse='true' type='interpolated' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0jl0l2y1c6yr161bfa37k0ro50ye].[avg:chl_observada:qk]' />
+              <lod column='[federated.0jl0l2y1c6yr161bfa37k0ro50ye].[clct:Geometry:nk]' />
+              <lod column='[federated.0jl0l2y1c6yr161bfa37k0ro50ye].[none:nome_uc:nk]' />
+              <lod column='[federated.0jl0l2y1c6yr161bfa37k0ro50ye].[none:cd_cnuc:nk]' />
+              <tooltip column='[federated.0jl0l2y1c6yr161bfa37k0ro50ye].[attr:nome_uc:nk]' />
+              <geometry column='[federated.0jl0l2y1c6yr161bfa37k0ro50ye].[clct:Geometry:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0jl0l2y1c6yr161bfa37k0ro50ye].[Latitude (generated)]</rows>
+        <cols>[federated.0jl0l2y1c6yr161bfa37k0ro50ye].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{F50D98B0-8021-4FF2-A69C-A9E294A3F0D4}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Planilha 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='170'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='170'>
+            <card pane-specification-id='0' param='[federated.0jl0l2y1c6yr161bfa37k0ro50ye].[avg:chl_observada:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0jl0l2y1c6yr161bfa37k0ro50ye].[avg:chl_observada:qk]</field>
+            <field>[federated.0jl0l2y1c6yr161bfa37k0ro50ye].[none:Calculation_0973131878531073:nk]</field>
+            <field>[federated.0jl0l2y1c6yr161bfa37k0ro50ye].[none:Calculation_0973131881029637:nk]</field>
+            <field>[federated.0jl0l2y1c6yr161bfa37k0ro50ye].[none:cd_cnuc:nk]</field>
+            <field>[federated.0jl0l2y1c6yr161bfa37k0ro50ye].[none:nome_uc:nk]</field>
+          </color-one-way>
+        </highlight>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{AA470E7C-EFBA-4F50-9A42-C096E27E2AF5}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Planilha 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
